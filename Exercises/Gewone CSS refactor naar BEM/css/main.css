@@ -1,0 +1,178 @@
+/*
+
+Tooplate 2122 Nano Folio
+
+https://www.tooplate.com/view/2122-nano-folio
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    line-height: 2em;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: #38CCCC;
+}
+
+a:hover { color: #30ADAD; }
+
+.container {
+    width: 100%;
+    max-width: 970px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 60px 15px;
+}
+
+.card {
+    display: flex;
+    color: white;
+    padding: 50px;
+    height: 470px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.card--bottom-spacing {
+    margin-bottom: 80px;
+}
+
+.card--center,
+.card--center-all > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card--rose {
+    background-color: #F96699;
+}
+
+.card--blue {
+    background-color: #38CCCC;
+}
+
+.card--light-blue {
+    background-color: #99CCCC;
+}
+
+.card__part {
+    flex: 1 1;
+}
+
+@media (min-width: 680px) {
+    .card__size-20 {
+        width: 20%;
+    }
+
+    .card__size-40 {
+        width: 40%;
+    }
+}
+
+.card__text {
+    margin-bottom: 40px;
+}
+
+.card__link,
+.card__link:hover {
+    color: #9F6;
+}
+
+.wrapper {
+    margin-bottom: 80px;
+}
+
+.gallery-nav {
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.gallery-nav__item {
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.gallery-nav__item .active {
+    color: #F96699;
+}
+
+.gallery {
+    margin: -10px;
+}
+
+.gallery-item {
+    border-radius: 12px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.card__contact {
+    flex-direction: column;
+    padding: 50px 20px;
+}
+
+@media (min-width: 680px) {
+    .card__contact {
+        flex-direction: row-reverse;
+    }
+}
+
+.card__contact-part {
+    padding-left: 34px;
+    padding-right: 34px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.contact {
+    color: white
+}
+
+.contact__title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.contact__input {
+    font: initial;
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    padding: 15px 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid white;
+    display: block;
+    width: 100%;
+}
+
+.contact__submit {
+    display: block;
+    margin-left: auto;
+}
+
+.end-note {
+    color: #999999;
+    text-align: center;
+}
+
+.end-note__link {
+    color: #999999;
+}
