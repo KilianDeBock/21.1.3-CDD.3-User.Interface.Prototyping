@@ -60,7 +60,7 @@ a:hover { color: #30ADAD; }
     justify-content: center;
 }
 
-.card--rose {
+.card--pink {
     background-color: #F96699;
 }
 
@@ -95,6 +95,48 @@ a:hover { color: #30ADAD; }
     color: #9F6;
 }
 
+.card__address {
+    margin-bottom: 30px;
+}
+
+.card__tel {
+    margin-bottom: 40px;
+}
+
+.card__tel-link {
+    color: white
+}
+
+.card__socials {
+    display: flex;
+}
+
+.card__social-link {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__social-link i {
+    color: #99CCCC;
+}
+
+.card__social-link:hover i.fa-facebook {
+    color: #3b5998;
+}
+
+.card__social-link:hover i.fa-twitter {
+    color: #00acee;
+}
+
+.card__social-link:hover i.fa-instagram {
+    color: #3f729b;
+}
+
 .wrapper {
     margin-bottom: 80px;
 }
@@ -125,6 +167,7 @@ a:hover { color: #30ADAD; }
 }
 
 .card__contact {
+    height: auto;
     flex-direction: column;
     padding: 50px 20px;
 }
@@ -138,7 +181,6 @@ a:hover { color: #30ADAD; }
 .card__contact-part {
     padding-left: 34px;
     padding-right: 34px;
-    box-sizing: border-box;
     width: 100%;
 }
 
