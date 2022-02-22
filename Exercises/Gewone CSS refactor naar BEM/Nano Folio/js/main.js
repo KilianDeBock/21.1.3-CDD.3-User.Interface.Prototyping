@@ -1,7 +1,7 @@
 $(function () {
-  // Init the image gallery
-  var $gallery = $('.gallery').isotope({
-    itemSelector: '.gallery-item',
+  // Init the image grid
+  var $gallery = $('.grid').isotope({
+    itemSelector: '.grid-item',
     layoutMode: 'fitRows'
   });
 
@@ -10,16 +10,16 @@ $(function () {
     $gallery.isotope('layout');
   });
 
-  $('.gallery-nav').on('click', 'a', function (e) {
+  $('.grid-nav').on('click', 'a', function (e) {
     e.preventDefault();
     var filterValue = $(this).attr('data-filter');
     $gallery.isotope({filter: filterValue});
-    $('.gallery-nav a').removeClass('active');
+    $('.grid-nav a').removeClass('active');
     $(this).addClass('active');
   });
 
   // Magnific Pop up
-  $('.gallery').magnificPopup({
+  $('.grid').magnificPopup({
     delegate: 'a',
     type: 'image',
     gallery: {enabled: true}

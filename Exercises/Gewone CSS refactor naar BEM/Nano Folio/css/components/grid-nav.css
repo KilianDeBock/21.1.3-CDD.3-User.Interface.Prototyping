@@ -1,0 +1,14 @@
+.grid-nav {
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+.grid-nav__item {
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.grid-nav__item .active {
+    color: #F96699;
+}
