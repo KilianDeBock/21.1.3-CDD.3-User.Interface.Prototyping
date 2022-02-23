@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script defer src="https://livejs.com/live.js"></script>
     <!-- Settings -->
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -16,116 +17,306 @@
 
 <body>
 <header>
-    <nav>
+    <nav class="nav">
         <section>
-            <button>Messages</button>
-            <ul>
-                <li>
-                    <button>Steven</button>
+            <button class="nav__chats">
+                <img alt="Text balloon" class="nav__chat-icon"
+                     src="static/media/images/Icon%20feather-message-square.svg">
+                <span>Messages</span>
+            </button>
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <button class="account">
+                        <img alt="Icon" class="account__img" src="static/media/images/3.jpg">
+                        <span class="account__name">Steven</span>
+                        <span class="popup popup--round">1</span>
+                    </button>
                 </li>
             </ul>
         </section>
-        <ul>
-            <li>
-                <button>Carla</button>
+        <ul class="nav__list">
+            <li class="nav__list-item">
+                <button class="account">
+                    <img alt="Icon" class="account__img" src="static/media/images/1.jpg">
+                    <span class="account__name">Carla</span>
+                </button>
             </li>
-            <li>
-                <section>
-                    <img src="" alt="Main Projects">
-                    <ul>
-                        <li>
-                            <button>Jaak</button>
-                        </li>
-                        <li>
-                            <button>Carla</button>
-                        </li>
-                        <li>
-                            <button>Jantje</button>
-                        </li>
-                        <li>
-                            <button>Bonneke</button>
-                        </li>
-                    </ul>
-                </section>
+            <li class="nav__group">
+                <button class="nav__group-icon">
+                    <svg class="nav__group-img nav__group-img--blue" height="27" viewBox="0 0 36 27" width="36"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32.625,9h-13.5l-4.5-4.5H3.375A3.375,3.375,0,0,0,0,7.875v20.25A3.375,3.375,0,0,0,3.375,31.5h29.25A3.375,3.375,0,0,0,36,28.125V12.375A3.375,3.375,0,0,0,32.625,9Z"
+                              transform="translate(0 -4.5)"/>
+                    </svg>
+                    <span class="nav__group-name">Main Projects</span>
+                </button>
+                <ul class="nav__list">
+                    <li>
+                        <button class="account">
+                            <img alt="Icon" class="account__img" src="static/media/images/1.jpg">
+                            <span class="account__name">Jaak</span>
+                        </button>
+                    </li>
+                    <li class="nav__list-item">
+                        <button class="account">
+                            <img alt="Icon" class="account__img" src="static/media/images/2.jpg">
+                            <span class="account__name">Carla</span>
+                        </button>
+                    </li>
+                    <li class="nav__list-item">
+                        <button class="account">
+                            <img alt="Icon" class="account__img" src="static/media/images/3.jpg">
+                            <span class="account__name">Jantje</span>
+                        </button>
+                    </li>
+                    <li class="nav__list-item">
+                        <button class="account">
+                            <img alt="Icon" class="account__img" src="static/media/images/4.jpg">
+                            <span class="account__name">Bonneke</span>
+                        </button>
+                    </li>
+                </ul>
             </li>
-            <li>
-                <section>
-                    <img src="" alt="Side Projects">
-                    <ul>
-                        <li>
-                            <button>Pol</button>
-                        </li>
-                        <li>
-                            <button>Kita</button>
-                        </li>
-                        <li>
-                            <button>Cola</button>
-                        </li>
-                        <li>
-                            <button>Melons</button>
-                        </li>
-                    </ul>
-                </section>
+            <li class="nav__group">
+                <button class="nav__group-icon">
+                    <svg class="nav__group-img nav__group-img--red" height="27" viewBox="0 0 36 27" width="36"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32.625,9h-13.5l-4.5-4.5H3.375A3.375,3.375,0,0,0,0,7.875v20.25A3.375,3.375,0,0,0,3.375,31.5h29.25A3.375,3.375,0,0,0,36,28.125V12.375A3.375,3.375,0,0,0,32.625,9Z"
+                              transform="translate(0 -4.5)"/>
+                    </svg>
+                    <span class="nav__group-name">Side Projects</span>
+                </button>
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <button class="account">
+                            <img alt="Icon" class="account__img" src="static/media/images/1.jpg">
+                            <span class="account__name">Jaak</span>
+                        </button>
+                    </li>
+                    <li class="nav__list-item">
+                        <button class="account">
+                            <img alt="Icon" class="account__img" src="static/media/images/2.jpg">
+                            <span class="account__name">Carla</span>
+                        </button>
+                    </li>
+                    <li class="nav__list-item">
+                        <button class="account">
+                            <img alt="Icon" class="account__img" src="static/media/images/3.jpg">
+                            <span class="account__name">Jantje</span>
+                        </button>
+                    </li>
+                    <li class="nav__list-item">
+                        <button class="account">
+                            <img alt="Icon" class="account__img" src="static/media/images/4.jpg">
+                            <span class="account__name">Bonneke</span>
+                        </button>
+                    </li>
+                    <li class="nav__list-item">
+                        <button class="account">
+                            <img alt="Icon" class="account__img" src="static/media/images/1.jpg">
+                            <span class="account__name">Lmail</span>
+                        </button>
+                    </li>
+                </ul>
             </li>
-            <li>
-                <span>NEW</span>
-                <img src="" alt="Arrow down">
+            <li class="popup">
+                <span class="popup__text">NEW</span>
+                <img alt="Arrow down" class="popup__img" src="static/media/images/Icon%20awesome-arrow-down.svg">
             </li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <section>
+    <section class="sidebar">
         <h2>Direct Messages</h2>
         <form action="POST">
-            <input type="text" placeholder="Find or start a conversation">
+            <input placeholder="Find or start a conversation" type="text">
             <button type="submit">Search</button>
         </form>
-        <ul>
-            <li>
-                <img src="" alt="Avatar">
-                <span>Jaak</span>
+        <ul class="sidebar__list">
+            <li class="sidebar__list-item active">
+                <section class="account">
+                    <img alt="Icon" class="account__img" src="static/media/images/1.jpg">
+                    <span class="account__status"></span>
+                </section>
+                <span class="sidebar__name">Pol</span>
             </li>
-            <li>
-                <img src="" alt="Avatar">
-                <span>Pol</span>
+            <li class="sidebar__list-item">
+                <section class="account">
+                    <img alt="Icon" class="account__img" src="static/media/images/4.jpg">
+                    <span class="account__status"></span>
+                </section>
+                <span class="sidebar__name">Jaak</span>
             </li>
-            <li>
-                <img src="" alt="Avatar">
-                <span>Magda</span>
+            <li class="sidebar__list-item">
+                <section class="account">
+                    <img alt="Icon" class="account__img" src="static/media/images/2.jpg">
+                    <span class="account__status"></span>
+                </section>
+                <span class="sidebar__name">Magda</span>
             </li>
-            <li>
-                <img src="" alt="Avatar">
-                <span>Nein</span>
+            <li class="sidebar__list-item">
+                <section class="account">
+                    <img alt="Icon" class="account__img" src="static/media/images/3.jpg">
+                    <span class="account__status"></span>
+                </section>
+                <span class="sidebar__name">Nein</span>
+            </li>
+            <li class="sidebar__list-item">
+                <section class="account">
+                    <img alt="Icon" class="account__img" src="static/media/images/1.jpg">
+                    <span class="account__status"></span>
+                </section>
+                <span class="sidebar__name">Pol</span>
+            </li>
+            <li class="sidebar__list-item">
+                <section class="account">
+                    <img alt="Icon" class="account__img" src="static/media/images/4.jpg">
+                    <span class="account__status"></span>
+                </section>
+                <span class="sidebar__name">Jaak</span>
+            </li>
+            <li class="sidebar__list-item">
+                <section class="account">
+                    <img alt="Icon" class="account__img" src="static/media/images/2.jpg">
+                    <span class="account__status"></span>
+                </section>
+                <span class="sidebar__name">Magda</span>
+            </li>
+            <li class="sidebar__list-item">
+                <section class="account">
+                    <img alt="Icon" class="account__img" src="static/media/images/3.jpg">
+                    <span class="account__status"></span>
+                </section>
+                <span class="sidebar__name">Nein</span>
+            </li>
+            <li class="sidebar__list-item">
+                <section class="account">
+                    <img alt="Icon" class="account__img" src="static/media/images/1.jpg">
+                    <span class="account__status"></span>
+                </section>
+                <span class="sidebar__name">Pol</span>
+            </li>
+            <li class="sidebar__list-item">
+                <section class="account">
+                    <img alt="Icon" class="account__img" src="static/media/images/4.jpg">
+                    <span class="account__status"></span>
+                </section>
+                <span class="sidebar__name">Jaak</span>
+            </li>
+            <li class="sidebar__list-item">
+                <section class="account">
+                    <img alt="Icon" class="account__img" src="static/media/images/2.jpg">
+                    <span class="account__status"></span>
+                </section>
+                <span class="sidebar__name">Magda</span>
+            </li>
+            <li class="sidebar__list-item">
+                <section class="account">
+                    <img alt="Icon" class="account__img" src="static/media/images/3.jpg">
+                    <span class="account__status"></span>
+                </section>
+                <span class="sidebar__name">Nein</span>
             </li>
         </ul>
     </section>
-    <section>
+    <section class="chat">
         <button>Close Menu</button>
         <ul>
             <li>
-                <img src="" alt="Avatar">
+                <button class="account">
+                    <img alt="Avatar" class="account__img" src="static/media/images/3.jpg">
+                    <span class="account__name">Kili</span>
+                </button>
+                <!-- this part does not matter since it is behind opacity just for spacing-->
+                <br><br><br><br>
+                <!-- End -->
             </li>
             <li>
-                <img src="" alt="Avatar">
+                <button class="account">
+                    <img alt="Avatar" class="account__img" src="static/media/images/3.jpg">
+                    <span class="account__name">Kili</span>
+                </button>
+                <!-- this part does not matter since it is behind opacity just for spacing-->
+                <br><br>
+                <!-- End -->
             </li>
             <li>
-                <img src="" alt="Avatar">
+                <button class="account">
+                    <img alt="Avatar" class="account__img" src="static/media/images/3.jpg">
+                    <span class="account__name">Kili</span>
+                </button>
+                <!-- this part does not matter since it is behind opacity just for spacing-->
+                <br><br>
+                <!-- End -->
             </li>
             <li>
-                <img src="" alt="Avatar">
+                <button class="account">
+                    <img alt="Avatar" class="account__img" src="static/media/images/2.jpg">
+                    <span class="account__name">Lula</span>
+                </button>
+                <!-- this part does not matter since it is behind opacity just for spacing-->
+                <br><br><br><br><br>
+                <!-- End -->
             </li>
             <li>
-                <img src="" alt="Avatar">
+                <button class="account">
+                    <img alt="Avatar" class="account__img" src="static/media/images/3.jpg">
+                    <span class="account__name">Kili</span>
+                </button>
+                <!-- this part does not matter since it is behind opacity just for spacing-->
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <!-- End -->
             </li>
             <li>
-                <img src="" alt="Avatar">
+                <button class="account">
+                    <img alt="Avatar" class="account__img" src="static/media/images/3.jpg">
+                    <span class="account__name">Kili</span>
+                </button>
             </li>
         </ul>
     </section>
 </main>
 
-<footer></footer>
+<footer>
+    <nav>
+        <ul>
+            <li>
+                <button>
+                    <img alt="Home / Discord Logo" src="">
+                    <span>Home</span>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <img alt="People" src="">
+                    <span>Friends</span>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <img alt="Magnifying Glass" src="">
+                    <span>Search</span>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <img alt="At symbol" src="">
+                    <span>Mentions</span>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <span>
+                        <img alt="Your avatar" src="static/media/images/3.jpg">
+                        <span>Profile & Settings</span>
+                    </span>
+                    <span>Do Not Disturb</span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</footer>
 </body>
 </html>

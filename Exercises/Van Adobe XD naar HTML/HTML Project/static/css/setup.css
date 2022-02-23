@@ -1,0 +1,9 @@
+html {
+    background-color: black;
+}
+
+body {
+    margin: 0 auto;
+    min-height: auto;
+    width: 30rem;
+}
