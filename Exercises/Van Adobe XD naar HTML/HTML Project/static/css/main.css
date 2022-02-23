@@ -1,0 +1,30 @@
+@import url("reset.css");
+
+:root {
+    --color-white-100: #fff;
+    --color-black-900: #18191D;
+    --color-black-800: #212226;
+    --color-black-700: #303136c;
+    --color-black-600: #303136;
+    --color-black-200: #303136c;
+    --color-black-100: #303136;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* word-wrap: break-word; */
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    min-height: auto;
+    width: 30rem;
+    margin: 0 auto;
+    background-color: var(--color-black-800);
+    font-family: Helvetica, Arial, sans-serif;
+}
