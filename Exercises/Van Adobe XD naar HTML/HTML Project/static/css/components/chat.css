@@ -1,0 +1,30 @@
+.chat {
+    background-color: var(--color-black-700);
+    border-radius: .5rem;
+    margin-left: .5rem;
+    width: 5rem;
+}
+
+.chat::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 5rem;
+    z-index: 1;
+}
+
+.chat__button {
+    background-image: url("../../media/images/Icon feather-menu.svg");
+    background-repeat: no-repeat;
+    display: block;
+    height: 2rem;
+    margin: 1rem auto;
+    position: relative;
+    width: 2rem;
+}
+
+.chat__button-text {
+    font-size: 0;
+}

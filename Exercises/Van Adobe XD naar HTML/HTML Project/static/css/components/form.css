@@ -1,0 +1,27 @@
+.form {
+    align-items: center;
+    background-color: var(--color-black-800);
+    border-radius: .3rem;
+    color: var(--color-black-100);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: .7rem;
+}
+
+.form__input {
+    width: 100%;
+}
+
+.form__icon {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1.3rem;
+    font-size: 0;
+    height: 2rem;
+    width: 2rem;
+}
+
+.form__icon--search {
+    background-image: url("../../media/images/Icon awesome-search.svg");
+}

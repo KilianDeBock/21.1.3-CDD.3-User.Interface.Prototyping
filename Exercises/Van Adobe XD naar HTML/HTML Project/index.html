@@ -129,10 +129,10 @@
 
 <main>
     <section class="sidebar">
-        <h2>Direct Messages</h2>
-        <form action="POST">
-            <input placeholder="Find or start a conversation" type="text">
-            <button type="submit">Search</button>
+        <h2 class="sidebar__title">Direct Messages</h2>
+        <form action="POST" class="form">
+            <input class="form__input" placeholder="Find or start a conversation" type="text">
+            <button class="form__icon form__icon--search" type="submit">Search</button>
         </form>
         <ul class="sidebar__list">
             <li class="sidebar__list-item active">
@@ -148,6 +148,7 @@
                     <span class="account__status"></span>
                 </section>
                 <span class="sidebar__name">Jaak</span>
+                <span class="popup popup--round popup--end">1</span>
             </li>
             <li class="sidebar__list-item">
                 <section class="account">
@@ -221,8 +222,12 @@
             </li>
         </ul>
     </section>
+    <!-- Chat is not a fully visible, so it's not completely worked out... -->
     <section class="chat">
-        <button>Close Menu</button>
+        <button class="chat__button">
+            <span class="chat__button-text">Close Menu</span>
+            <span class="popup popup--round popup--no-back">1</span>
+        </button>
         <ul>
             <li>
                 <button class="account">
@@ -277,42 +282,44 @@
             </li>
         </ul>
     </section>
+    <!-- End not so worked out stuff -->
 </main>
 
 <footer>
     <nav class="footer">
         <ul class="footer__list">
-            <li class="footer_list-item">
-                <button>
-                    <img alt="Home / Discord Logo" src="">
-                    <span>Home</span>
+            <li class="footer__list-item">
+                <button class="footer__action-item">
+                    <img alt="Home / Discord Logo" class="footer__action-img"
+                         src="static/media/images/Icon%20awesome-discord.svg">
+                    <span class="footer__action-title">Home</span>
                 </button>
             </li>
-            <li class="footer_list-item">
-                <button>
-                    <img alt="People" src="">
-                    <span>Friends</span>
+            <li class="footer__list-item">
+                <button class="footer__action-item">
+                    <img alt="People" class="footer__action-img"
+                         src="static/media/images/Icon%20awesome-user-friends.svg">
+                    <span class="footer__action-title">Friends</span>
                 </button>
             </li>
-            <li class="footer_list-item">
-                <button>
-                    <img alt="Magnifying Glass" src="">
-                    <span>Search</span>
+            <li class="footer__list-item">
+                <button class="footer__action-item">
+                    <img alt="Magnifying Glass" class="footer__action-img"
+                         src="static/media/images/Icon%20awesome-search.svg">
+                    <span class="footer__action-title">Search</span>
                 </button>
             </li>
-            <li class="footer_list-item">
-                <button>
-                    <img alt="At symbol" src="">
-                    <span>Mentions</span>
+            <li class="footer__list-item">
+                <button class="footer__action-item">
+                    <img alt="At symbol" class="footer__action-img" src="static/media/images/Icon%20awesome-at.svg">
+                    <span class="footer__action-title">Mentions</span>
                 </button>
             </li>
-            <li class="footer_list-item">
-                <button>
-                    <span>
-                        <img alt="Your avatar" src="static/media/images/3.jpg">
-                        <span>Profile & Settings</span>
-                    </span>
-                    <span>Do Not Disturb</span>
+            <li class="footer__list-item">
+                <button class="account account--tiny">
+                    <img alt="Your Avatar" class="account__img" src="static/media/images/3.jpg">
+                    <span class="account__name">Kili</span>
+                    <span class="account__status account__status--dnd"></span>
                 </button>
             </li>
         </ul>

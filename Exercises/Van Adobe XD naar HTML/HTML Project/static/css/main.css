@@ -1,6 +1,16 @@
+/* Initial setup: */
 @import url("reset.css");
 @import url("setup.css");
+/* Components: */
+@import url("components/nav.css");
+@import url("components/account.css");
+@import url("components/popup.css");
+@import url("components/sidebar.css");
+@import url("components/chat.css");
+@import url("components/form.css");
+@import url("components/footer.css");
 
+/* Variables */
 :root {
     --color-black-100: #95969B;
     --color-black-200: #303136c;
@@ -13,6 +23,7 @@
     --color-white-100: #fff;
 }
 
+/* Global styling: */
 body {
     background-color: var(--color-black-800);
     display: flex;
@@ -31,151 +42,4 @@ main {
 
 footer {
     width: 100%;
-}
-
-.nav {
-    padding: .5rem;
-    position: relative;
-}
-
-.nav__chats {
-    background-color: var(--color-blue-500);
-    border-radius: 1rem;
-    display: block;
-    font-size: 0;
-    height: 3.5rem;
-    margin: 0 auto;
-    width: 3.5rem;
-}
-
-.nav__chat-icon {
-    margin: 0 auto;
-}
-
-.nav__list {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    margin: 1rem 0;
-}
-
-.nav__group {
-    background-color: var(--color-black-700);
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    padding-top: .5rem;
-}
-
-.nav__group .nav__list-item:last-child {
-    margin-bottom: -2rem;
-}
-
-.nav__group-icon {
-    display: block;
-    margin: 0 auto;
-    padding-top: .5rem;
-}
-
-.nav__group-img {
-    width: 2rem;
-}
-
-.nav__group-img--blue {
-    fill: #3398DB;
-}
-
-.nav__group-img--red {
-    fill: #AB1457;
-}
-
-.nav__group-name {
-    display: none;
-}
-
-.account {
-    position: relative;
-    width: 3.5rem;
-}
-
-.account__name {
-    display: none;
-}
-
-.account__img {
-    border-radius: 50%;
-}
-
-.account__status {
-    background-color: transparent;
-    border: .2rem solid var(--color-black-100);
-    border-radius: 50%;
-    bottom: 0;
-    padding: .2rem;
-    position: absolute;
-    right: 0;
-}
-
-.popup {
-    align-items: center;
-    background-color: var(--color-red-500);
-    border-radius: .35rem;
-    bottom: 1.7rem;
-    color: var(--color-white-100);
-    display: flex;
-    left: .4rem;
-    padding: .2rem .4rem;
-    position: absolute;
-}
-
-.popup__text {
-    font-size: .7rem;
-    padding: .2rem 0;
-}
-
-.popup__img {
-    height: .85rem;
-    margin-left: .5rem;
-}
-
-.popup--round {
-    border: .2rem solid var(--color-black-800);
-    border-radius: 1rem;
-    bottom: -.3rem;
-    font-size: .7rem;
-    left: auto;
-    right: -.3rem;
-}
-
-.sidebar {
-    background-color: var(--color-black-700);
-    border-radius: .5rem;
-    padding: 1rem;
-    width: 100%;
-}
-
-.sidebar__list > *:not(:last-child) {
-    margin-bottom: .3rem;
-}
-
-.sidebar__list-item.active {
-    background-color: var(--color-black-600);
-    border-radius: .5rem;
-}
-
-.sidebar__list-item {
-    align-items: center;
-    display: flex;
-    gap: 1rem;
-    padding: .6rem .8rem;
-}
-
-.sidebar__list-item .account {
-    width: 3rem;
-}
-
-.chat {
-    background-color: var(--color-black-700);
-    border-radius: .5rem;
-    margin-left: .5rem;
-    width: 5rem;
 }

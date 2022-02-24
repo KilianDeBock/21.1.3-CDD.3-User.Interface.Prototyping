@@ -1,0 +1,43 @@
+.account {
+    position: relative;
+    width: 3.5rem;
+}
+
+.account--tiny {
+    width: 2.3rem;
+}
+
+.account__name {
+    display: none;
+}
+
+.account__img {
+    border-radius: 50%;
+}
+
+.account__status {
+    background-color: transparent;
+    border: .2rem solid var(--color-black-100);
+    border-radius: 50%;
+    bottom: 0;
+    padding: .2rem;
+    position: absolute;
+    right: 0;
+}
+
+.account__status--dnd {
+    background-color: var(--color-red-500);
+    border: .2rem solid var(--color-black-900);
+    padding: .4rem;
+}
+
+.account__status--dnd::after {
+    background-color: var(--color-black-900);
+    content: '';
+    height: .2rem;
+    left: .12rem;
+    position: absolute;
+    top: .3rem;
+    width: .6rem;
+    z-index: 1;
+}
