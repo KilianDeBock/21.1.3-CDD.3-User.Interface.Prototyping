@@ -1,0 +1,21 @@
+{
+  "name": "scss-oefeningen",
+  "version": "",
+  "description": "Kleine oefeningen met SCSS - PGM",
+  "main": "",
+  "scripts": {
+    "watch": "live-server --port=8090",
+    "oef1": "cd ./oef1 && sass scss:dist/css --watch",
+    "oef2": "cd ./oef2 && sass scss:dist/css --watch",
+    "oef3": "cd ./oef3 && sass scss:dist/css --watch",
+    "oef4": "cd ./oef4 && sass scss:dist/css --watch",
+    "oef5": "cd ./oef5 && sass scss:dist/css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "sass": "^1.49.9"
+  }
+}
