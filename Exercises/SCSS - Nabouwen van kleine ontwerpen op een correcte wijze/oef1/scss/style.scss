@@ -1,0 +1,44 @@
+$blue: blue;
+$lightblue: lightskyblue;
+
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gotu', sans-serif;
+}
+
+#container {
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+.main-nav {
+  color: $blue;
+
+  .main-nav__list {
+    display: flex;
+    list-style: none;
+  }
+
+  .main-nav__item {
+    flex-grow: 1;
+    background-color: $lightblue;
+    text-align: center;
+    border: 3px solid $blue;
+
+    &:not(:last-child) {
+      border-right: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font: inherit;
+  }
+}
