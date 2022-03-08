@@ -1,0 +1,21 @@
+{
+  "name": "eleventy-portfolio",
+  "version": "1.0.0",
+  "description": "Eleventy based portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "keywords": [
+    "Eleventy",
+    "Portfolio",
+    "SCSS",
+    "SSG"
+  ],
+  "author": "Stualyttle Kirry",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0"
+  }
+}
