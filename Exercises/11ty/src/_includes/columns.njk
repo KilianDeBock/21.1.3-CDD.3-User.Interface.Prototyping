@@ -1,0 +1,16 @@
+{% extends "base.njk" %}
+
+{% block content %}
+    {% include "components/heading.njk" %}
+
+    <div class="columns">
+        <article class="columns__col">
+            {% block left %}}{% endblock %}
+        </article>
+
+        <article class="columns__col">
+            {% block right %}}{% endblock %}
+        </article>
+    </div>
+    Contact Page
+{% endblock %}
