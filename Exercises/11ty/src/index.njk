@@ -1,3 +1,18 @@
+---
+headingBox:
+    title: "heye"
+    subtitle: "Eggegegeg?"
+    container: true
+textImg:
+    text: 'Heye'
+    img: '/dist/images/artevelde.png'
+    imgAlt: 'idk to be honnest'
+    container: true
+---
+
 {% extends "default.njk" %}
 
-{% block content %}CONTENT!{% endblock %}
+{% block content %}
+    {% include "components/heading-box.njk" %}
+    {% include "components/text-img.njk" %}
+{% endblock %}

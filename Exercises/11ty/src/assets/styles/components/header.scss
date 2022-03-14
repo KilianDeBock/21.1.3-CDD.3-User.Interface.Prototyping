@@ -1,0 +1,39 @@
+.nav {
+  background-color: $color-blue-500;
+}
+
+.nav__wrapper {
+  margin: 0 auto;
+  max-width: 100rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 3rem;
+
+  .main-nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .nav-item a,
+  .nav-logo {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: $color-white-500;
+    padding: .8rem 1rem;
+    border-radius: 2rem;
+    transition: color .2s ease-in-out, background-color .2s ease-in-out;
+
+    &.active,
+    &:hover:not(.nav-logo) {
+      background-color: $color-white-500;
+      color: $color-black-500;
+    }
+  }
+
+  .nav-logo {
+    color: $color-blue-500;
+    background-color: $color-white-500;
+    font-size: 2rem;
+  }
+}

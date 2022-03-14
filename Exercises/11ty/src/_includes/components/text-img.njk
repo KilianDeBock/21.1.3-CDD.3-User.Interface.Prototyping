@@ -1,0 +1,11 @@
+{% if headingBox.container %}<div class="container">{% endif %}
+<section class="text-img">
+{% if textImg.reverse %}
+    <img class="text-img__img" src="{{ textImg.img }}" alt="{{ textImg.imgAlt }}">
+    <p class="text-img__text">{{ textImg.text }}</p>
+{% else %}
+    <p class="text-img__text">{{ textImg.text }}</p>
+    <img class="text-img__img" src="{{ textImg.img }}" alt="{{ textImg.imgAlt }}">
+{% endif %}
+</section>
+{% if headingBox.container %}</div>{% endif %}

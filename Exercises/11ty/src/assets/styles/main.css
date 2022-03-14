@@ -187,6 +187,16 @@ video {
   vertical-align: baseline;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins Medium.woff2") format("woff2"), url("/fonts/Poppins Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins Regular.woff2") format("woff2"), url("/fonts/Poppins Regular.woff") format("woff");
+  font-weight: 400;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -196,35 +206,116 @@ video {
 
 body {
   line-height: 1;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 h1 {
-  font-size: 3.052rem;
+  font-size: 6.25rem;
 }
 
 h2 {
-  font-size: 2.441rem;
+  font-size: 2.625rem;
 }
 
 h3 {
-  font-size: 1.953rem;
-}
-
-h4 {
-  font-size: 1.563rem;
-}
-
-h5 {
-  font-size: 1.563rem;
+  font-size: 2.25rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
-body {
-  background-color: red;
+a {
+  font-size: 1.75rem;
+}
+
+.heading-box {
+  margin: 1rem;
+}
+
+.text-img {
+  display: flex;
+}
+.container {
+  margin: 0 auto;
+  max-width: 100rem;
+}
+
+.spread {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 30rem;
+}
+
+.socials__item {
+  width: 100%;
+  max-width: 15rem;
+}
+
+.nav {
+  background-color: #0A00FF;
+}
+
+.nav__wrapper {
+  margin: 0 auto;
+  max-width: 100rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 3rem;
+}
+.nav__wrapper .main-nav ul {
+  display: flex;
+  gap: 2rem;
+}
+.nav__wrapper .nav-item a,
+.nav__wrapper .nav-logo {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  padding: 0.8rem 1rem;
+  border-radius: 2rem;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.nav__wrapper .nav-item a.active, .nav__wrapper .nav-item a:hover:not(.nav-logo),
+.nav__wrapper .nav-logo.active,
+.nav__wrapper .nav-logo:hover:not(.nav-logo) {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+.nav__wrapper .nav-logo {
+  color: #0A00FF;
+  background-color: #FFFFFF;
+  font-size: 2rem;
+}
+
+.footer {
+  color: #FFFFFF;
+  margin: 0 1rem;
+}
+.footer > * {
+  background-color: #0A00FF;
+  padding: 4rem 6rem;
+}
+.footer .footer__about .footer__wrapper {
+  margin-bottom: -4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #FFFFFF;
+}
+.footer .footer__about .footer__wrapper .footer__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.footer .footer__about .footer__wrapper .footer__hashtag:before {
+  content: "#";
 }
 
 /*# sourceMappingURL=main.css.map */
