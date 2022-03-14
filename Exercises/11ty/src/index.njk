@@ -1,15 +1,3 @@
----
-title: Home
-heading: Homepage!
----
+{% extends "default.njk" %}
 
-{% extends "columns.njk" %}
-
-{% block left %}
-    Dit is mijn linker inhoud op de homepage
-    <img/>
-{% endblock %}
-
-{% block right %}
-    <h2>Hello!</h2>
-{% endblock %}
+{% block content %}CONTENT!{% endblock %}
