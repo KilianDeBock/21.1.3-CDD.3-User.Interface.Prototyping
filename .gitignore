@@ -7,6 +7,7 @@ logs
 .git
 cogs/.DS_Store
 .DS_Store
+build
 
 # Logs
 logs
