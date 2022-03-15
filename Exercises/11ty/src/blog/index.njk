@@ -1,0 +1,18 @@
+---
+title: Blog
+description: eeee
+image: laptop.jpg
+tags: page
+---
+
+{% extends 'layouts/page.njk' %}
+
+{% block content %}
+    <ul>
+    {% for p in collections.post %}
+        <li>
+            <a href="{{ p.url }}">{{ p.data.title }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

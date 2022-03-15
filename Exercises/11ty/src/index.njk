@@ -1,4 +1,5 @@
 ---
+title: Home
 headingBox:
     title: "heye"
     subtitle: "Eggegegeg?"
@@ -8,9 +9,10 @@ textImg:
     img: '/dist/images/artevelde.png'
     imgAlt: 'idk to be honnest'
     container: true
+tags: page
 ---
 
-{% extends "default.njk" %}
+{% extends "layouts/page.njk" %}
 
 {% block content %}
     {% include "components/heading-box.njk" %}
