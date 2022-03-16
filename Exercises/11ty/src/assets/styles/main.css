@@ -205,7 +205,7 @@ video {
 }
 
 body {
-  line-height: 1;
+  line-height: 2.2rem;
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
@@ -247,6 +247,16 @@ a {
   transform: translate(0, -50%);
 }
 
+.center-box {
+  gap: 2rem;
+  width: 33rem;
+  display: flex;
+  margin: 8rem auto;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .text-img {
   display: flex;
   margin: 1rem;
@@ -257,7 +267,6 @@ a {
 }
 .text-img .text-img__text-box {
   gap: 2rem;
-  line-height: 2.2rem;
   display: flex;
   padding: 5rem 4rem;
   flex-direction: column;
@@ -327,7 +336,7 @@ a {
 
 .footer {
   color: #FFFFFF;
-  margin: 0 1rem;
+  margin: 0 1rem 1rem;
 }
 .footer > * {
   background-color: #0A00FF;
@@ -350,6 +359,9 @@ a {
   padding: 1rem 4rem;
   border-radius: 3rem;
   background-color: #FFFFFF;
+}
+.btn.btn-border {
+  border: 1px solid #000000;
 }
 
 /*# sourceMappingURL=main.css.map */

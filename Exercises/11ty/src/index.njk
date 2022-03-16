@@ -11,6 +11,9 @@ textImg:
     imgAlt: Person typing/coding at laptop.
     btn: Kom naar de infodag
     container: true
+centerBox:
+    HTML: <h3>Wat zal je leren?</h3><p>In het Graduaat Programmeren leer je programmeren en staat front-end web development centraal. Jouw lessen worden doorspekt met interactieve oefeningen. Je krijgt opdrachten om nieuwe leerstof snel onder de knie te krijgen. Werkplekleren en jouw stage zijn samen goed voor meer dan 1.200 uur aan praktijkervaring. Hierna ben je meer dan klaar voor de arbeidsmarkt.</p><button class="btn btn-border">Bekijk het curriculum</button>
+    container: true
 tags: page
 ---
 
@@ -19,4 +22,5 @@ tags: page
 {% block content %}
     {% include "components/heading-box.njk" %}
     {% include "components/text-img.njk" %}
+    {% include "components/center-box.njk" %}
 {% endblock %}
