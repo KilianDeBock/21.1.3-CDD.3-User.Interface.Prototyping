@@ -14,6 +14,7 @@ textImg:
     imgAlt: Using smartphone.
     btn: Bericht versturen
     container: true
+highlight: Vind ons terug op alle sociale media als <span class="text__yellow">Graduaat Programmeren Artevelde.</span>
 tags: page
 ---
 
@@ -22,7 +23,5 @@ tags: page
 {% block content %}
     {% include "components/heading-box.njk" %}
     {% include "components/text-img.njk" %}
-    <section class="highlight container">
-        <p class="text__big">Vind ons terug op alle sociale media als <span class="text__yellow">Graduaat Programmeren Artevelde.</span></p>
-    </section>
+    {% include "components/highlight.njk" %}
 {% endblock %}
