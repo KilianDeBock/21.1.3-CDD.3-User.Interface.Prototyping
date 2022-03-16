@@ -398,11 +398,18 @@ textarea {
 }
 
 .text__big {
+  font-weight: bold;
   font-size: 6rem;
 }
 
 .text__yellow {
   color: #FFC400;
+}
+
+.highlight {
+  margin: 1rem;
+  background-color: #F4F4F4;
+  padding: 6rem 4rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -19,9 +19,16 @@ $color-gray-500: #F4F4F4;
 
 
 .text__big {
+  font-weight: bold;
   font-size: 6rem;
 }
 
 .text__yellow {
   color: $color-yellow-500;
+}
+
+.highlight {
+  margin: 1rem;
+  background-color: $color-gray-500;
+  padding: 6rem 4rem;
 }
