@@ -348,6 +348,10 @@ textarea {
   max-width: 100rem;
 }
 
+.gap {
+  margin: 1rem;
+}
+
 .center-box {
   gap: 2rem;
   width: 33rem;
@@ -463,6 +467,16 @@ textarea {
   margin: 1rem;
   background-color: #F4F4F4;
   padding: 6rem 4rem;
+}
+
+.text-block {
+  display: block;
+  width: 60rem;
+  margin: 8rem auto;
+  padding-right: 10rem;
+}
+.text-block > * {
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
