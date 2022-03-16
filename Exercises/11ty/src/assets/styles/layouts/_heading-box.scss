@@ -6,9 +6,20 @@
 
   .heading-box__content {
     top: 50%;
-    display: block;
+    gap: 3rem;
+    max-width: 36rem;
+    margin: 0 auto;
+    display: flex;
     position: relative;
     text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     transform: translate(0, -50%);
+  }
+
+  &.heading-box__yellow {
+    background-color: $color-yellow-500;
+    color: $color-black-500;
   }
 }

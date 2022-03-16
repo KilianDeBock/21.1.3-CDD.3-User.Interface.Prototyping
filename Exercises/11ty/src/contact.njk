@@ -1,5 +1,19 @@
 ---
 title: Contact
+headingBox:
+    type: yellow
+    title: Contacteer ons
+    text: Chat met onze studenten en kom meer te weten over het studentenleven en onze opleidingen.
+    btn: Chat met Philippe
+    container: true
+textImg:
+    type: red
+    title: Geen zin om te chatten?<br>Een mailtje versturen kan ook!
+    text: <form><label for="name">Naam</label><input type="text" id="name"><label for="email">Emailadres</label><input type="email" id="email"><label for="msg">Bericht</label><textarea id="msg" rows="3"></textarea></form>
+    img: contact.png
+    imgAlt: Person typing/coding at laptop.
+    btn: Kom naar de infodag
+    container: true
 tags: page
 ---
 
@@ -8,4 +22,5 @@ tags: page
 {% block content %}
     {% include "components/heading-box.njk" %}
     {% include "components/text-img.njk" %}
+    <p class="text__big">Vind ons terug op alle sociale media als <span class="text__yellow">Graduaat Programmeren Artevelde.</span></p>
 {% endblock %}

@@ -1,10 +1,10 @@
 {% if textImg.container %}
 <div class="container">
     {% endif %}
-    <section class="text-img">
+    <section class="text-img{% if textImg.type %} text-img__{{ textImg.type }}{% endif %}">
         <span class="text-img__text-box">
-            <h2 class="text-img__title">{{ textImg.title }}</h2>
-            <p class="text-img__text">{{ textImg.text | safe }}</p>
+            <h2 class="text-img__title">{{ textImg.title | safe }}</h2>
+            <div class="text-img__text">{{ textImg.text | safe }}</div>
             {% if textImg.btn %}
                 <button class="btn">{{ textImg.btn }}</button>
             {% endif %}

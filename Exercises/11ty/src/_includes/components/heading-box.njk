@@ -1,9 +1,9 @@
 {% if headingBox.container %}
 <div class="container">
     {% endif %}
-    <section class="heading-box">
+    <section class="heading-box{% if headingBox.type %} heading-box__{{ headingBox.type }}{% endif %}">
         <span class="heading-box__content">
-            <h2 class="heading-box__title">{{ headingBox.title }}</h2>
+            <h1 class="heading-box__title">{{ headingBox.title }}</h1>
             <span class="heading-box__text">{{ headingBox.text }}</span>
             {% if headingBox.btn %}
                 <button class="btn">{{ headingBox.btn }}</button>

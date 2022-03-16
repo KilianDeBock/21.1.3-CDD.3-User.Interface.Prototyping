@@ -205,19 +205,19 @@ video {
 }
 
 body {
-  line-height: 2.2rem;
+  line-height: 1.5;
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1.5rem;
 }
 
 h1 {
-  font-size: 6.25rem;
+  font-weight: bold;
+  font-size: 4.3rem;
 }
 
 h2 {
   font-weight: bold;
-  margin-bottom: 0.8rem;
   font-size: 2.625rem;
 }
 
@@ -233,6 +233,20 @@ a {
   font-size: 1.75rem;
 }
 
+form,
+input,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input,
+textarea {
+  background-color: white;
+  margin-bottom: 1.2rem;
+  border-radius: 0.22rem;
+}
+
 .heading-box {
   margin: 1rem;
   color: #FFFFFF;
@@ -241,10 +255,20 @@ a {
 }
 .heading-box .heading-box__content {
   top: 50%;
-  display: block;
+  gap: 3rem;
+  max-width: 36rem;
+  margin: 0 auto;
+  display: flex;
   position: relative;
   text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   transform: translate(0, -50%);
+}
+.heading-box.heading-box__yellow {
+  background-color: #FFC400;
+  color: #000000;
 }
 
 .center-box {
@@ -273,6 +297,14 @@ a {
   justify-content: center;
   align-items: flex-start;
   background-color: #FFC400;
+}
+.text-img .text-img__text-box .text-img__text {
+  display: block;
+  width: 100%;
+}
+.text-img.text-img__red .text-img__text-box {
+  background-color: #FD4505;
+  color: #FFFFFF;
 }
 
 .container {
@@ -358,10 +390,19 @@ a {
 .btn {
   padding: 1rem 4rem;
   border-radius: 3rem;
+  color: #000000;
   background-color: #FFFFFF;
 }
 .btn.btn-border {
   border: 1px solid #000000;
+}
+
+.text__big {
+  font-size: 6rem;
+}
+
+.text__yellow {
+  color: #FFC400;
 }
 
 /*# sourceMappingURL=main.css.map */

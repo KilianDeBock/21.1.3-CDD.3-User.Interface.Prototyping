@@ -16,3 +16,12 @@ $color-gray-500: #F4F4F4;
 @import 'components/header';
 @import 'components/footer';
 @import 'components/btn';
+
+
+.text__big {
+  font-size: 6rem;
+}
+
+.text__yellow {
+  color: $color-yellow-500;
+}

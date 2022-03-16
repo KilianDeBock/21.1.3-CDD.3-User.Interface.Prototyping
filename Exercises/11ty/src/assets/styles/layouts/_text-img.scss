@@ -15,5 +15,17 @@
     justify-content: center;
     align-items: flex-start;
     background-color: $color-yellow-500;
+
+    .text-img__text {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &.text-img__red {
+    .text-img__text-box {
+      background-color: $color-red-500;
+      color: $color-white-500;
+    }
   }
 }
