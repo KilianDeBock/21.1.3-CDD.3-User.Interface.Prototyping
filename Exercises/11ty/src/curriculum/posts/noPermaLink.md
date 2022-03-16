@@ -1,3 +1,0 @@
-# Lol?
-
-Kek hha

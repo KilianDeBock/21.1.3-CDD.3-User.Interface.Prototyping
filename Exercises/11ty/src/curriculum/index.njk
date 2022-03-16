@@ -1,17 +1,18 @@
 ---
 title: Curriculum
-description: eeee
-image: laptop.jpg
+highlight: In ons curriculum staat <span class="text__yellow">front-end webdevelopment</span> centraal.
 tags: page
 ---
 
 {% extends 'layouts/page.njk' %}
 
 {% block content %}
-    <ul>
-        {% for p in collections.cposts %}
-            <li>
-                {{ p.templateContent | safe }}
+    {% include "components/highlight.njk" %}
+    <ul class="posts container">
+        {% for p in collections.curriculum %}
+            <li class="posts__post">
+                <h3 class="posts__title">{{ p.data.title }}</h3>
+                <div class="posts__content">{{ p.data.description }}</div>
             </li>
         {% endfor %}
     </ul>

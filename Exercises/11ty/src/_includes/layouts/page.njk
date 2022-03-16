@@ -1,9 +1,9 @@
 {% extends "layouts/default.njk" %}
 
 {% block main %}
-    <section class="container">
+    <div class="container">
         {% block content %}
             {{ content | safe }}
         {% endblock %}
-    </section>
+    </div>
 {% endblock %}

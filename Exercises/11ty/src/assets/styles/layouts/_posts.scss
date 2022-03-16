@@ -1,37 +1,23 @@
-.posts {
-  padding: 1rem 5rem;
+.post {
+  margin: 1rem;
+  padding-bottom: 8rem;
 
-  & > *:not(:last-child) {
+  h1 {
+    display: block;
+    color: $color-red-500;
+    text-align: center;
+    padding: 5rem 0;
+    margin-bottom: 5rem;
     border-bottom: 2px solid $color-gray-500;
   }
 
-  .posts__post {
-    display: flex;
-    padding: 4rem 0;
-    justify-content: space-between;
+  & > *:not(h1) {
+    max-width: 50rem;
+    margin: 0 auto 3rem;
+    display: block;
   }
 
-  .posts__title {
-    width: 25%;
-    font-weight: bold;
-    color: $color-red-500;
-  }
-
-  .posts__content {
-    gap: 2rem;
-    width: 60%;
-    display: flex;
-    padding-right: 10rem;
-    flex-direction: column;
-  }
-
-  .posts__read-more {
-    font-weight: bold;
-    color: $color-blue-500;
-
-    &:after {
-      content: '+';
-      margin-left: 2rem;
-    }
+  h2:not(:first-child) {
+    margin-top: 8rem;
   }
 }

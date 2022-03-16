@@ -279,6 +279,27 @@ textarea {
   margin-left: 2rem;
 }
 
+.post {
+  margin: 1rem;
+  padding-bottom: 8rem;
+}
+.post h1 {
+  display: block;
+  color: #FD4505;
+  text-align: center;
+  padding: 5rem 0;
+  margin-bottom: 5rem;
+  border-bottom: 2px solid #F4F4F4;
+}
+.post > *:not(h1) {
+  max-width: 50rem;
+  margin: 0 auto 3rem;
+  display: block;
+}
+.post h2:not(:first-child) {
+  margin-top: 8rem;
+}
+
 .spread {
   display: flex;
   justify-content: space-between;
