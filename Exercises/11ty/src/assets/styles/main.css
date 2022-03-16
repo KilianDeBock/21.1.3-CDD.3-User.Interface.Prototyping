@@ -247,6 +247,38 @@ textarea {
   border-radius: 0.22rem;
 }
 
+.posts {
+  padding: 1rem 5rem;
+}
+.posts > *:not(:last-child) {
+  border-bottom: 2px solid #F4F4F4;
+}
+.posts .posts__post {
+  display: flex;
+  padding: 4rem 0;
+  justify-content: space-between;
+}
+.posts .posts__title {
+  width: 25%;
+  font-weight: bold;
+  color: #FD4505;
+}
+.posts .posts__content {
+  gap: 2rem;
+  width: 60%;
+  display: flex;
+  padding-right: 10rem;
+  flex-direction: column;
+}
+.posts .posts__read-more {
+  font-weight: bold;
+  color: #0A00FF;
+}
+.posts .posts__read-more:after {
+  content: "+";
+  margin-left: 2rem;
+}
+
 .spread {
   display: flex;
   justify-content: space-between;
