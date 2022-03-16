@@ -8,6 +8,7 @@ logs
 cogs/.DS_Store
 .DS_Store
 build
+build/
 
 # Logs
 logs

@@ -1,6 +1,15 @@
-{% if headingBox.container %}<div class="container">{% endif %}
-<section class="heading-box">
-    <h2 class="heading">{{ headingBox.title }}</h2>
-    <span class="subtitle">{{ headingBox.subtitle }}</span>
-</section>
-{% if headingBox.container %}</div>{% endif %}
+{% if headingBox.container %}
+<div class="container">
+    {% endif %}
+    <section class="heading-box">
+        <span class="heading-box__content">
+            <h2 class="heading-box__title">{{ headingBox.title }}</h2>
+            <span class="heading-box__text">{{ headingBox.text }}</span>
+            {% if headingBox.btn %}
+                <button class="btn">{{ headingBox.btn }}</button>
+            {% endif %}
+        </span>
+    </section>
+    {% if headingBox.container %}
+</div>
+{% endif %}

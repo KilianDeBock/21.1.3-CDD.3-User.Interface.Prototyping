@@ -1,3 +1,14 @@
 .heading-box {
   margin: 1rem;
+  color: $color-white-500;
+  background-color: $color-red-500;
+  height: 50rem;
+
+  .heading-box__content {
+    top: 50%;
+    display: block;
+    position: relative;
+    text-align: center;
+    transform: translate(0, -50%);
+  }
 }

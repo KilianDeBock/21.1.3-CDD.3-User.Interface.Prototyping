@@ -1,11 +1,20 @@
 .text-img {
   display: flex;
+  margin: 1rem;
+  gap: 1rem;
 
-  .text-img__img {
-
+  & > * {
+    width: 50%;
   }
 
-  .text-img__text {
-
+  .text-img__text-box {
+    gap: 2rem;
+    line-height: 2.2rem;
+    display: flex;
+    padding: 5rem 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: $color-yellow-500;
   }
 }
