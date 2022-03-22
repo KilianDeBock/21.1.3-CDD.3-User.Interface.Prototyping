@@ -1,0 +1,16 @@
+<header>
+    <section class="nav">
+        <div class="nav__wrapper">
+            <a href="/" class="nav-item nav-logo">PGM</a>
+            <nav class="main-nav">
+                <ul>
+                    {% for p in collections.page %}
+                        <li class="nav-item">
+                            <a href="{{ p.url }}"{% if page.url === p.url %} class="active"{% endif %}>{{ p.data.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </section>
+</header>

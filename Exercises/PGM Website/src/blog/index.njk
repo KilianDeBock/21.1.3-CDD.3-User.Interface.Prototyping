@@ -1,0 +1,22 @@
+---
+title: Blog
+highlight: <span class="text__yellow">Keeping up</span> with the GDM’ers
+tags: page
+---
+
+{% extends 'layouts/page.njk' %}
+
+{% block content %}
+    {% include "components/highlight.njk" %}
+    <ul class="posts container">
+    {% for p in collections.post %}
+        <li class="posts__post">
+            <h3 class="posts__title">{{ p.data.title }}</h3>
+            <div class="posts__content">
+                <span class="posts__description">{{ p.data.description }}</span>
+                <a class="posts__read-more" href="{% if p.url %}{{ p.url }}{% else %}#{% endif %}">Lees meer</a>
+            </div>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}
