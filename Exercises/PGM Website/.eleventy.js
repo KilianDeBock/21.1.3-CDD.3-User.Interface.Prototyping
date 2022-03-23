@@ -1,5 +1,6 @@
-const del = require('del'),
-    path = require("path");
+const del = require('del');
+const path = require("path");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
     const dirToClean = path.join('build', "*");
@@ -12,6 +13,7 @@ module.exports = function (eleventyConfig) {
     })
 
     // eleventyConfig.addWatchTarget("src/assets/styles/")
+    eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
     return {
         ...eleventyConfig,

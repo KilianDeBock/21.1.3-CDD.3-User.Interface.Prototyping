@@ -4,9 +4,9 @@
             <a href="/" class="nav-item nav-logo">PGM</a>
             <nav class="main-nav">
                 <ul>
-                    {% for p in collections.page %}
+                    {% for p in collections.page | eleventyNavigation %}
                         <li class="nav-item">
-                            <a href="{{ p.url }}"{% if page.url === p.url %} class="active"{% endif %}>{{ p.data.title }}</a>
+                            <a href="{{ p.url }}"{% if page.url === p.url %} class="active"{% endif %}>{{ p.key }}</a>
                         </li>
                     {% endfor %}
                 </ul>

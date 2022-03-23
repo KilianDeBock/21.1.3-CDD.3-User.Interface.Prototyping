@@ -1,0 +1,3 @@
+- Extends 1x === layout not component
+- include for components
+- 
